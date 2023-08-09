@@ -392,31 +392,49 @@ height: 400px;
     gap: 30px;
 }
 .main-lang{
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    margin-top: 200px;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 100px;
     text-align: center;
-    
+    height: 500px;
    
 }
 .stars{
-    margin-top: 50px;
 }
 
 .lang1{
-   
     background-color: #FEF8F5;
     width: 400px;
-    height: 250px;
+    height: 350px;
+    text-align: center;
+}
+.lang1 h2{
+margin-top: 20px;}
+.skill1{
+    display: flex; 
+
+}
+.lang1-content{
+    margin-top: 40px;
+    padding-left: 20px; 
+}.label-lang{
+font-size: 20px;
+padding-right: 20px;
+padding-bottom: 50px;
+font-weight: bold;
+color: black;
 }
 .lang2{
     
     background-color: #FEF8F5;
     width: 400px;
-    height: 250px;
+    height: 350px;
 }
-
+.lang2-content{
+    margin-top: 40px;
+    padding-left: 20px; 
+}
 .Contact{
     display: grid;
     grid-template-columns: auto auto auto ;
@@ -577,10 +595,10 @@ padding: 10px 20px;
         gap: 20px;
     }
     .main-lang{
-        display: flex;
-        gap: 100px;
-        justify-content: center;
-        margin-top: 200px;
+        display: grid;
+grid-template-columns: auto auto; 
+       justify-content: space-around;
+        margin-top: 100px;
         text-align: center;
         
        
@@ -590,14 +608,14 @@ padding: 10px 20px;
     .lang1{
        
         background-color: #FEF8F5;
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
     .lang2{
         
         background-color: #FEF8F5;
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
     
 }
@@ -608,12 +626,10 @@ padding: 10px 20px;
     position: relative;
     margin-top: 10px;
   }
-   .nav{
-    display:block;  
-}
-.sub-nav a:hover{
+   /* .nav{
     
-}
+} */
+
 .sub-nav:hover{
     background: #EB5D1E;
 }
@@ -633,7 +649,7 @@ padding: 10px 20px;
         
     }
     .nav{
-        
+         display:block; 
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -645,7 +661,7 @@ padding: 10px 20px;
         transition: all .5s;   
     }
     
-    #check:checked ~ ul{
+    #check:checked~.nav{
         left: 0;
     }
     li a{
@@ -815,42 +831,40 @@ padding: 10px 20px;
     }
     .languages{
         
-        height:900px ;
-        
+        height: 1100px;
         
     }
     
     .main-lang{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-        align-items: center;
-        margin-top:100px;
-        text-align: center;
+        display: grid;
+grid-template-columns: auto; 
+justify-content: space-around; 
+       margin-top:100px;
+       
         
        
-    }
-    .stars{
-        margin-top: 50px;
     }
     
+    
     .lang1{
-       
+
         background-color: #FEF8F5;
         width: 400px;
-        height: 250px;
+        height: 340px;
     }
     .lang2{
-        
+               margin-top:100px;
+
         background-color: #FEF8F5;
         width: 400px;
-        height: 250px;
+        height: 340px;
     }
 
 
 
 
     .Contact{
+            margin-top: 400px;
         justify-content: center;
         height: 900px;
     }
